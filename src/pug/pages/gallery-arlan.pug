@@ -1,0 +1,24 @@
+extends ../_template
+
+mixin swiper-item(pic)
+    .swiper-slide
+        img.gallery__slider-img(src=pic alt="picture")
+
+block content
+  .main-wrap
+
+    //begin content
+    section.gallery
+        a.gallery__link(href="index.html")
+            +svg('house')
+            span.gallery__text Вернуться на главную
+        .gallery__slider.swiper
+            .swiper-wrapper
+                +swiper-item("assets/img/bg-gallery.jpg")
+                +swiper-item("assets/img/bg-gallery.jpg")
+                +swiper-item("assets/img/bg-gallery.jpg")
+            .swiper-button-prev.gallery__slider-btn.gallery__slider-btn--prev.arlan
+            .swiper-button-next.gallery__slider-btn.gallery__slider-btn--next.arlan
+    //end content
+
+    include ../sections/scripts
