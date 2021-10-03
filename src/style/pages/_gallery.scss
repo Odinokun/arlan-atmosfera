@@ -31,16 +31,26 @@
 
 	&__slider-btn {
 		position: absolute;
+		top: 50%;
 		width: 120px;
 		height: 120px;
 		border-radius: 50%;
-		top: 50%;
+		cursor: pointer;
 
 		&.atmosfera {
 			background-color: $bg-atmosfera;
 		}
 
-		&--prev {}
-		&--next {}
+		&.arlan {
+			background-color: $bg-arlan;
+		}
+
+		&--prev {
+			left: 60px;
+		}
+
+		&--next {
+			right: 60px;
+		}
 	}
 }

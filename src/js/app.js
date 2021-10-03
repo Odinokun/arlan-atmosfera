@@ -4,6 +4,6 @@ $(function() {
   require('./modules/svg4everybody')();
 
   // swiper init
-  require('./modules/swiper')();
+//   require('./modules/swiper')();
 
 });
