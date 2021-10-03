@@ -2,3 +2,12 @@
 mixin svg(svg)
   svg
     use(xlink:href="assets/img/sprite.svg#" + svg + "")
+
+mixin link_to_main()
+    a.gallery__link(href="index.html")
+                    +svg('house')
+                    span.gallery__text Вернуться на главную
+
+mixin swiper-item(pic)
+    .swiper-slide
+        img.gallery__slider-img(src=pic alt="picture")
