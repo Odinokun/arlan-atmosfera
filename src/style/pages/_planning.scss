@@ -1,183 +1,226 @@
 .planning {
-	background: #F7FBF8;
-	min-height: 100vh;
-	width: 100%;
+  width: 100%;
+  min-height: 100vh;
 
-	&__header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 40px 40px 0;
-		margin-bottom: 40px;
-	}
+  &--arlan {
+    background-color: #f9f9fa;
+  }
 
-	&__filter {
-		display: flex;
-	}
+  &--atmosfera {
+    background-color: #f7fbf8;
+  }
 
-	.btn {
-		max-width: 100%;
-		width: auto;
-		min-width: 250px;
-		&:not(:last-child) {
-			margin-right: 20px;
-		}
-	}
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 40px 40px 0;
+  }
 
-	&__slider {
-		padding-left: 40px;
-		padding-right: 40px;
-		padding-bottom: 110px;
-	}
+  &__filter {
+    display: flex;
+  }
 
-	&__slider-scrollbar {
-		height: 10px !important;
-		left: 2% !important;
-		width: 96% !important;
-		transform: translateY(-20px);
+  .btn {
+    width: auto;
+    min-width: 250px;
+    max-width: 100%;
 
-		.swiper-scrollbar-drag {
-			width: 50px !important;
-			height: 50px;
-			border-radius: 50%;
-			margin-top: -20px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
 
-			&::before,
-			&::after {
-				content: "";
-				position: absolute;
-				display: block;
-				width: 10px;
-				height: 3px;
-				left: 40%;
-				z-index: 100;
-				border-radius: 20px;
-			}
+  &__slider {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 
-			&::before {
-				top: 42%;
-			}
+  //begin #SCROLLBAR
+  &__slider-scrollbar-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    margin-top: 60px;
 
-			&::after {
-				bottom: 42%;
-			}
-		}
-		
-		&--atmosfera {
-			background-color: #D5ECDB;
+    &::before {
+      // основной фон скролла
+      position: absolute;
+      top: 20px;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      content: '';
+    }
+  }
 
-			.swiper-scrollbar-drag {
-				background-color: #4A7755;
 
-				&::before,
-				&::after {
-					background-color: #ffffff80;
-				}
-			}
-		}
+  &__slider-scrollbar {
+    height: 10px !important;
+    transform: translateY(20px);
+    background-color: transparent;
 
-		&--arlan {
-			background-color: #F8E2B5;
+    .swiper-scrollbar-drag {
+      z-index: 10;
 
-			.swiper-scrollbar-drag {
-				background-color: #ECAC56;
+      //ползунок
+      top: -20px;
+      width: 50px;
+      height: 50px !important;
+      border-radius: 50%;
 
-				&::before,
-				&::after {
-					background-color: #14141480;
-				}
-			}
-				
-		}
-	}
+      &::before {
+        //фон прокрученного скролла
+        position: absolute;
+        top: 20px;
+        right: 50px;
+        width: 100vw;
+        height: 10px;
+        content: '';
+      }
 
-	&__slide {
-		padding: 40px;
-		background: #fff;
-		box-shadow: 7px 7px 30px rgba(74, 119, 85, 0.1);
-		border-radius: 20px;
-		max-width: 435px;
-		cursor: grab;
-	}
+      &::after {
+        //рисунок на ползунке
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 10px;
+        height: 8px;
+        margin: auto;
+        content: '';
+        background-image: url('../img/bg-scroll-arlan.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+  }
 
-	&__img {
-		margin-bottom: 38px;
+  &__slider-scrollbar-wrap--arlan {
+    &::before {
+      // основной фон скролла
+      background-color: #f8e2b5;
+    }
 
-		img {
-			width: 100%;
-		}
-	}
+    .swiper-scrollbar-drag {
+      //ползунок
+      background-color: #ecac56;
+      //box-shadow: 0 7px 20px rgba(250, 191, 103, .3);
 
-	&__title {
-		font-family: Manrope;
-		font-size: 33px;
-		font-weight: 600;
-		line-height: 45px;
-		margin-bottom: 42px;
-		color: #141414;
-	}
+      &::before {
+        //фон прокрученного скролла
+        background-color: #ecac56;
+      }
+    }
+  }
 
-	&__pricing {
-		display: flex;
-		margin-bottom: 34px;
-	}
+  &__slider-scrollbar-wrap--atmosfera {
+    &::before {
+      // основной фон скролла
+      background-color: #d5ecdb;
+    }
 
-	&__size,
-	&__price {
-		position: relative;
-		display: inline-block;
-		font-size: 30px;
-		font-weight: 600;
-		line-height: 41px;
-		color: #141414;
+    .swiper-scrollbar-drag {
+      //ползунок
+      background-color: #4a7755;
+      //box-shadow: 0 7px 20px rgba(35, 65, 42, .3);
+      &::before {
+        //фон прокрученного скролла
+        background-color: #6d9477;
+      }
+    }
+  }
 
-		&::before {
-			position: absolute;
-			font-size: 11px;
-			line-height: 15px;
-			letter-spacing: 0.1em;
-			text-transform: uppercase;
-			left: 0;
-			top: -18px;
-			color: #969696;
-		}
-			
-	}
+  //end #SCROLLBAR
+  &__slide {
+    max-width: 435px;
+    padding: 40px;
+    cursor: grab;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 7px 7px 30px rgba(74, 119, 85, .1);
+  }
 
-	&__size {
-		margin-right: 46px;
+  &__img {
+    margin-bottom: 38px;
 
-		&::before {
-			content: "площадь";
-		}
-	}
+    img {
+      width: 100%;
+    }
+  }
 
-	&__price {
-		&::before {
-			content: "Стоимость";
-		}
-	}
+  &__title {
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 42px;
+    color: #141414;
+  }
 
-	&__defails-link {
-		font-weight: 600;
-		font-size: 24px;
-		line-height: 34px;
-		letter-spacing: 0.04em;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border-radius: 20px;
-		width: 100%;
-		height: 80px;
-		
-		&.arlan {
-			background-color: $bg-arlan;
-			color: #141414;
-		}
-		
-		&.atmosfera {
-			background-color: $bg-atmosfera;
-			color: #fff;
-		}
-	}
+  &__pricing {
+    display: flex;
+    margin-bottom: 34px;
+  }
+
+  &__size,
+  &__price {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 41px;
+    position: relative;
+    display: inline-block;
+    color: #141414;
+
+    &::before {
+      font-size: 11px;
+      line-height: 15px;
+      position: absolute;
+      top: -18px;
+      left: 0;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: #969696;
+    }
+  }
+
+  &__size {
+    margin-right: 46px;
+
+    &::before {
+      content: 'площадь';
+    }
+  }
+
+  &__price {
+    &::before {
+      content: 'Стоимость';
+    }
+  }
+
+  &__defails-link {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    letter-spacing: .04em;
+    border-radius: 20px;
+
+    &.arlan {
+      color: #141414;
+      background-color: $bg-arlan;
+    }
+
+    &.atmosfera {
+      color: #fff;
+      background-color: $bg-atmosfera;
+    }
+  }
 }

@@ -4,7 +4,7 @@ block content
   .main-wrap
 
     //begin content
-    section.planning
+    section.planning.planning--arlan
         .container
             header.planning__header
                 +link_to("index.html", "house", "Вернуться на главную")
@@ -21,8 +21,15 @@ block content
                     +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
                     +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
                     +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
-                .swiper-scrollbar.planning__slider-scrollbar.planning__slider-scrollbar--arlan
-                
+                    +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
+                    +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
+                    +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
+                    +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
+                    +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
+                    +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
+                .planning__slider-scrollbar-wrap.planning__slider-scrollbar-wrap--arlan
+                    .swiper-scrollbar.planning__slider-scrollbar
+
     //end content
 
     include ../sections/scripts
