@@ -10,4 +10,17 @@ module.exports = function () {
 		},
 	  });
 	  // end gallery slider
+
+	  // begin planning slider
+	  new Swiper(".planning__slider", {
+		slidesPerView: 4,
+		spaceBetween: 20,
+		scrollbar: {
+			el: ".swiper-scrollbar",
+			hide: false,
+			dragSize: 50,
+			draggable: true
+		  },
+	  });
+	  // end planning slider
 } 

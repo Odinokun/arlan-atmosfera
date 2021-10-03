@@ -1,0 +1,28 @@
+extends ../_template
+
+block content
+  .main-wrap
+
+    //begin content
+    section.planning
+        .container
+            header.planning__header
+                +link_to("index.html", "house", "Вернуться на главную")
+                .planning__filter
+                    +planing-filter-btn("Студия")
+                    +planing-filter-btn("1 комната")
+                    +planing-filter-btn("2 комната")
+                    +planing-filter-btn("3 комната")
+            .swiper.planning__slider
+                .swiper-wrapper.planning__slider-wrapper
+                    +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
+                    +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
+                    +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
+                    +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
+                    +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
+                    +planing-item("assets/img/flat.jpg", "Студия", "main-planning-arlan.html", arlan=true)
+                .swiper-scrollbar.planning__slider-scrollbar.planning__slider-scrollbar--arlan
+                
+    //end content
+
+    include ../sections/scripts

@@ -12,3 +12,20 @@ mixin swiper-item(path)
     .swiper-slide
         img.gallery__slider-img(src=path alt="picture")
 
+mixin planing-filter-btn(text)
+    button.planning__filter-btn= text
+
+mixin planing-item(path, title, link, arlan)
+    .planning__slide.swiper-slide
+        .planning__img
+            img(src=path)
+        .planning__title
+            span= title
+        .planning__pricing
+            span.planning__size 40 м2
+            span.planning__price от 11,2 млн. тг
+        if arlan
+            a.planning__defails-link.arlan(href=link) Подробнее
+        else
+            a.planning__defails-link.atmosfera(href=link) Подробнее
+
