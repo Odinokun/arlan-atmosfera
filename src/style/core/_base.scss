@@ -154,3 +154,19 @@ svg {
 	margin: 0 auto;
 	max-width: 1920px;
 }
+
+.link-to {
+	display: inline-flex;
+	align-items: center;
+	z-index: 2;
+	padding: 33px;
+	border-radius: 20px;
+	background-color: #fff;
+	box-shadow: 7px 7px 30px rgba(74, 119, 85, 0.1);
+
+	svg {
+		height: 33px;
+		width: 33px;
+		margin-right: 26px;
+	}
+}
