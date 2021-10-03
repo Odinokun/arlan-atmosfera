@@ -1,0 +1,64 @@
+extends ../_template
+
+block variables
+  - var title       = ''
+  - var description = ''
+  - var ogtitle     = ''
+  - var ogimage     = ''
+
+block content
+  .main-wrap
+    //begin content
+    main.main
+      .main-planning.main-planning--arlan.container
+        //begin main-planning__left
+        .main-planning__left
+          .main-planning__btn
+            +link_to("index.html", "arrow-back", "Вернуться назад")
+
+          .main-planning__btns
+            a(href="#").btn.btn--arlan.active 1 этаж
+            a(href="#").btn.btn--arlan 2 этаж
+            a(href="#").btn.btn--arlan 3 этаж
+            a(href="#").btn.btn--arlan 4 этаж
+            a(href="#").btn.btn--arlan 5 этаж
+            a(href="#").btn.btn--arlan 6 этаж
+
+          //main-planning__floor
+          .main-planning__floor
+            svg(width='704' height='181' viewBox='0 0 704 181' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(id="Продано" class="sold" d='M659.419 180.328L659.419 103.112L572.232 103.112L572.232 180.328L659.419 180.328Z'  stroke='#C8C8C8' stroke-miterlimit='10')
+              path(id="Свободно" class="free" d='M488.835 77.1543L488.835 1.33911L401.647 1.33911L401.647 77.1543L488.835 77.1543Z' stroke='#C8C8C8' stroke-miterlimit='10')
+              path(d='M572.315 180.328L572.315 103.112L445.407 103.112L445.407 180.328L572.315 180.328Z' fill='white' stroke='#C8C8C8' stroke-miterlimit='10')
+              path(d='M445.325 77.1539L401.731 77.1539L401.731 17.0786L358.467 17.0786L358.467 77.1539L358.467 120.253L358.467 180.329L445.325 180.329L445.325 77.1539Z' fill='white' stroke='#C8C8C8' stroke-miterlimit='10')
+              path(id="Продано" class="sold" d='M555.999 77.1543L615.58 77.1543L615.58 1.33911L529.711 1.33911L529.711 53.5033L555.999 53.5033L555.999 77.1543Z'  stroke='#C8C8C8' stroke-miterlimit='10')
+              path(d='M703.343 103.113L703.343 77.1548L703.343 1.3396L615.579 1.3396L615.579 77.1548L615.579 103.113L659.42 103.113L659.42 163.271L703.343 163.271L703.343 103.113Z' fill='white' stroke='#C8C8C8' stroke-miterlimit='10')
+              path(d='M615.58 77.1543L555.999 77.1543L555.999 53.5033L529.711 53.5033L529.711 1.33911L488.837 1.33911L488.837 77.1543L445.325 77.1543L445.325 103.113L615.58 103.113L615.58 77.1543Z' fill='#F4F4F5' stroke='#C8C8C8' stroke-miterlimit='10')
+              path(id="Продано" class="sold" d='M174.449 180.328L174.449 103.112L88.5804 103.112L88.5804 180.328L174.449 180.328Z' stroke='#C8C8C8' stroke-miterlimit='10')
+              path(id="Продано" class="sold" d='M302.43 77.1543L302.43 1.33911L215.242 1.33911L215.242 77.1543L302.43 77.1543Z'  stroke='#C8C8C8' stroke-miterlimit='10')
+              path(id="Продано" class="sold" d='M258.753 180.328L258.753 103.112L174.449 103.112L174.449 180.328L258.753 180.328Z'  stroke='#C8C8C8' stroke-miterlimit='10')
+              path(d='M258.835 77.1539L302.428 77.1539L302.428 17.0786L345.693 17.0786L345.693 77.1539L345.693 120.253L345.692 180.329L258.835 180.329L258.835 77.1539Z' fill='white' stroke='#C8C8C8' stroke-miterlimit='10')
+              path(id="Продано" class="sold" d='M148.161 77.1543L88.5805 77.1543L88.5805 1.33911L174.449 1.33911L174.449 53.5033L148.161 53.5033L148.161 77.1543Z'  stroke='#C8C8C8' stroke-miterlimit='10')
+              path(d='M88.5797 126.352L88.5797 103.113L88.5797 77.1543L88.5797 55.2338L88.5797 1.33911L44.6563 1.33911L44.6563 18.3975L0.815376 18.3975L0.815373 77.1543L0.815372 103.113L0.815369 163.27L44.6563 163.27L44.6563 180.329L88.5797 180.329L88.5797 126.352Z' fill='white' stroke='#C8C8C8' stroke-miterlimit='10')
+              path(d='M88.5805 77.1543L148.161 77.1543L148.161 53.5033L174.45 53.5033L174.45 1.33911L215.241 1.33911L215.241 77.1543L258.835 77.1543L258.835 103.113L88.5805 103.113L88.5805 77.1543Z' fill='#F4F4F5' stroke='#C8C8C8' stroke-miterlimit='10')
+
+          //begin main-planning__footer
+          .main-planning__footer
+            h3.main-planning__flat-title 3х комн. квартира
+            .main-planning__flat-info
+              .main-planning__flat-info-item
+                span площадь
+                span 43,89 м <sup>2</sup>
+              .main-planning__flat-info-item
+                span Стоимость
+                span от 11,2 млн. тг
+          //end main-planning__footer
+        //end main-planning__left
+        
+        //begin main-planning__right
+        .main-planning__right
+          img(src="assets/img/temp.jpg" alt="picture" class="main-planning__img")
+        //end main-planning__right
+    //end content
+
+    include ../sections/scripts
