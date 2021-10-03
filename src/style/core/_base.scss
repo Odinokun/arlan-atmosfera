@@ -132,6 +132,16 @@ svg {
     color: #fff;
     background-color: #4a7755;
   }
+
+  &--arlan {
+    color: #34344a;
+    border: 2px solid #34344a;
+
+    &.active,
+    &:hover {
+      background-color: #34344a;
+    }
+  }
 }
 
 
