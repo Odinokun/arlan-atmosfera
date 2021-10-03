@@ -1,4 +1,140 @@
 .planning {
+	background: #F7FBF8;
 	min-height: 100vh;
 	width: 100%;
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 40px 40px 0;
+		margin-bottom: 40px;
+	}
+
+	&__filter {
+		display: flex;
+	}
+
+	&__filter-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 25px;
+		font-weight: 600;
+		line-height: 34px;
+		letter-spacing: 0.04em;
+		min-width: 250px;
+		height: 80px;
+		cursor: pointer;
+		color: $bg-atmosfera;
+		border-radius: 50px !important;
+		border: 3px solid $bg-atmosfera;
+		background-color: #fff;
+
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+
+	&__slider-wrapper {
+		margin-bottom: 80px;
+	}
+
+	&__slider-scrollbar {
+		height: 10px !important;
+
+		&.arlan {
+			background-color: #fff;
+		}
+	}
+
+	&__slide {
+		padding: 40px;
+		background: #fff;
+		box-shadow: 7px 7px 30px rgba(74, 119, 85, 0.1);
+		border-radius: 20px;
+		max-width: 435px;
+		cursor: grab;
+	}
+
+	&__img {
+		margin-bottom: 38px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__title {
+		font-family: Manrope;
+		font-size: 33px;
+		font-weight: 600;
+		line-height: 45px;
+		margin-bottom: 42px;
+		color: #141414;
+	}
+
+	&__pricing {
+		display: flex;
+		margin-bottom: 34px;
+	}
+
+	&__size,
+	&__price {
+		position: relative;
+		display: inline-block;
+		font-size: 30px;
+		font-weight: 600;
+		line-height: 41px;
+		color: #141414;
+
+		&::before {
+			position: absolute;
+			font-size: 11px;
+			line-height: 15px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			left: 0;
+			top: -18px;
+			color: #969696;
+		}
+			
+	}
+
+	&__size {
+		margin-right: 46px;
+
+		&::before {
+			content: "площадь";
+		}
+	}
+
+	&__price {
+		&::before {
+			content: "Стоимость";
+		}
+	}
+
+	&__defails-link {
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 34px;
+		letter-spacing: 0.04em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 20px;
+		width: 100%;
+		height: 80px;
+		
+		&.arlan {
+			background-color: $bg-arlan;
+			color: #141414;
+		}
+		
+		&.atmosfera {
+			background-color: $bg-atmosfera;
+			color: #fff;
+		}
+	}
 }
