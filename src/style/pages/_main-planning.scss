@@ -25,6 +25,16 @@
       svg {
         width: 515px;
         height: 396px;
+
+        path {
+          &.sold {
+            fill: #d5ecdb;
+          }
+
+          &.free {
+            fill: #4a7755;
+          }
+        }
       }
     }
   }
@@ -48,6 +58,16 @@
         width: 704px;
         height: 181px;
         margin: 120px 0 0 90px;
+
+        path {
+          &.sold {
+            fill: #fde6bd;
+          }
+
+          &.free {
+            fill: #e5a145;
+          }
+        }
       }
     }
   }
@@ -92,14 +112,6 @@
 
     path {
       transition: fill .5s;
-
-      &.sold {
-        fill: #d5ecdb;
-      }
-
-      &.free {
-        fill: #4a7755;
-      }
     }
   }
 }
