@@ -22,6 +22,7 @@
 .main-planning__floor {
   position: relative;
   width: 660px;
+  margin-bottom: 40px;
   height: 533px;
   background-image: url('../img/main-plan-atmosfera.svg');
   background-repeat: no-repeat;
@@ -48,6 +49,80 @@
     }
   }
 }
+
+.main-planning__footer{
+display: flex;
+  width: 100%;
+  padding: 20px 40px;
+}
+.main-planning__flat-title{
+  font-weight: 600;
+  font-size: 40px;
+  margin-right: auto;
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+
+  color: #141414;
+
+}
+
+
+
+.main-planning__flat-info {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px;
+
+}
+
+.main-planning__flat-info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  //padding-right: 55px;
+  padding-left: 30px;
+
+
+
+  span {
+    &:first-child {
+      font-size: 11px;
+      font-weight: normal;
+      line-height: 15px;
+      display: block;
+      margin-bottom: 8px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: #969696;
+    }
+
+    &:last-child {
+      font-weight: 600;
+      line-height: 1;
+      display: block;
+      white-space: nowrap;
+      text-transform: lowercase;
+      color: #141414;
+      font-size: 30px;
+
+
+      sup {
+        font-size: 18px;
+        position: relative;
+        display: inline-block;
+        transform: translate(-5px, -5px);
+      }
+    }
+  }
+}
+
+
+
+
+
 
 .main-planning__right {
   position: relative;

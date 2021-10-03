@@ -15,6 +15,10 @@ block content
       .main-planning.main-planning--atmosfera.container
         //begin main-planning__left
         .main-planning__left
+
+
+
+
           //main-planning__floor
           .main-planning__floor
             svg(width='302' height='232' viewBox='0 0 302 232' fill='none' xmlns='http://www.w3.org/2000/svg')
@@ -58,6 +62,19 @@ block content
               path(d='M38.1026 74.2641H67.6343V60.327H46.3896V52.0401H38.1026V40.6267H30.1924V74.2641V101.762H37.9896L38.1026 74.2641Z' fill='#F7FBF8' stroke='#C8C8C8')
               path(d='M38.1026 28.0456V19.3066H67.6343V33.1308V60.327H46.3896V52.04H38.1026V40.6267H30.1924V28.0456H38.1026Z' fill='white' stroke='#C8C8C8')
               path(d='M30.1926 40.6275V28.0464H38.1029V19.3074H63.265L63.491 18.8931V5.521H38.1029H34.1477H30.1926H4.84212V19.3074H1V33.1316V47.37H30.1926V40.6275Z' fill='white' stroke='#C8C8C8')
+        
+          //begin main-planning__footer
+          .main-planning__footer
+            h3.main-planning__flat-title 3х комн. квартира
+            .main-planning__flat-info
+              .main-planning__flat-info-item
+                span площадь
+                span 43,89 м <sup>2</sup>
+              .main-planning__flat-info-item
+                span Стоимость
+                span от 11,2 млн. тг
+          //end main-planning__footer
+
         //end main-planning__left
         
         //begin main-planning__right
@@ -65,27 +82,6 @@ block content
           img(src="assets/img/temp.jpg" alt="picture" class="main-planning__img")
         //end main-planning__right
 
-              //begin choice__footer
-              //.choice__footer
-                //h3.choice__flat-title Студия
-                h3.choice__flat-title 3 комнаты
-                .choice__flat-info
-                  .choice__flat-info-item
-                    span площадь
-                    span 43,89 м <sup>2</sup>
-                  .choice__flat-info-item
-                    span Стоимость
-                    span от 11,2 млн. тг
-                  a(href="https://dominante.ru/presentation/dominante_81.pdf" target="_blank").choice__flat-info-link
-                    +svg('pdf')
-                    span Скачать PDF
-
-                .choice__flat-links
-                  button.choice__flat-link-btn.btn.popup-open(data-popup="popup-callback") Забронировать
-                  a(href="#credit").choice__flat-link-question.scroll-btn
-                    +svg('question')
-                    span Как купить
-              //end choice__footer
 
 
     //end content
