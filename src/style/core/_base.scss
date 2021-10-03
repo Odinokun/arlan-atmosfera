@@ -98,18 +98,18 @@ svg {
 
 .btn {
   font-family: 'Manrope', sans-serif;
+  font-size: 25px;
   font-weight: 600;
   line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  height: 74px;
   margin-right: 20px;
   padding: 5px 22px;
   cursor: pointer;
-  height: 74px;
   user-select: none;
   transition: all .5s;
-  font-size: 25px;
   text-align: center;
   white-space: nowrap;
   text-decoration: none;
@@ -156,6 +156,7 @@ svg {
   display: inline-flex;
   align-items: center;
   padding: 33px;
+  user-select: none;
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 7px 7px 30px rgba(74, 119, 85, .1);
