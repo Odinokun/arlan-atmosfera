@@ -1,0 +1,69 @@
+.index {
+  display: grid;
+  min-height: 100vh;
+  padding: 20px;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.index-item {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-end;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.index-item--atmosfera {
+  background-image: url('../img/bg-atmosfera.jpg');
+
+  .index-item__link {
+    color: #fff;
+    background-image: url('../img/bg-atmosfera-item.png');
+  }
+}
+
+.index-item--arlan {
+  background-image: url('../img/bg-arlan.jpg');
+
+  .index-item__link {
+    color: #141414;
+    background-image: url('../img/bg-arlan-item.png');
+  }
+}
+
+.index-item__logo {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.index-item__links {
+  display: flex;
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.index-item__link {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+  height: 270px;
+  margin: 20px 10px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: .04em;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
