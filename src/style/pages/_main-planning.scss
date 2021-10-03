@@ -25,14 +25,14 @@
 
 .main-planning__btn {
   width: 100%;
-  padding: 40px;
+  padding: 20px 40px 40px 40px;
 }
 
 .main-planning__btns{
 display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 20px 40px 40px 40px;
+  padding: 20px 40px;
   .btn {
     margin-bottom: 20px;
   }
@@ -73,11 +73,10 @@ display: flex;
 //end #FLOOR
 
 //begin #FOOTER
-
 .main-planning__footer{
 display: flex;
   width: 100%;
-  padding: 40px;
+  padding: 20px 40px;
 }
 .main-planning__flat-title{
   font-weight: 600;
