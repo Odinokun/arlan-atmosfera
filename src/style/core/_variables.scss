@@ -1,18 +1,13 @@
-//// ===== main colors =====
-//$brand: #00407a;
-//$highlight: #D83612;
-//$highlight-hov: darken($highlight, 5%);
-//
-//// ===== text colors =====
-//$text: #181a19;
-//
-//// ===== link colors =====
-//$link: lighten($brand, 10%);
-//$link-hov: lighten($link, 25%);
-//
-//// ===== transition =====
-//$transition-hover: .3s ease-in-out;
-//
-//// ===== fonts =====
-//$font:      'OpenSans', sans-serif;
-//$font-bold: 'OpenSans-Bold', sans-serif;
+// ===== main colors =====
+$bg-atmosfera: #4A7755;
+$bg-arlan: linear-gradient(267.23deg, 
+#FAD993 -37.14%, 
+#FAD48B -7.03%, 
+#FAC977 18.56%, 
+#FAC26B 44.91%, 
+#FABF67 75.02%, 
+#ECAC56 107.39%), #4A7755;
+
+$color-atromsfera: #FFFFFF;
+$color-arlan: #141414;
+

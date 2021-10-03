@@ -1,7 +1,6 @@
 .index {
   display: grid;
   min-height: 100vh;
-  padding: 20px;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -66,4 +65,8 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+}
+
+.container {
+	padding: 20px;
 }
