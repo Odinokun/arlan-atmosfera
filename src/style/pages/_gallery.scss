@@ -6,30 +6,20 @@
 	.container {
 		position: relative;
 		padding: 0;
+
+	}
+	
+	.link-to {
+		position: absolute;
+		left: 60px;
+		top: 60px;
 	}
 
 	&__slider {
 		height: 100vh;
 	}
 
-	&__link {
-		position: absolute;
-		display: flex;
-		align-items: center;
-		z-index: 2;
-		left: 60px;
-		top: 60px;
-		padding: 33px;
-		border-radius: 20px;
-		background-color: #fff;
-		box-shadow: 7px 7px 30px rgba(74, 119, 85, 0.1);
-
-		svg {
-			height: 33px;
-			width: 33px;
-			margin-right: 26px;
-		}
-	}
+	
 
 	&__text  {
 		font-size: 30px;
