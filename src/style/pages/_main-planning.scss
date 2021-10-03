@@ -8,7 +8,21 @@
     }
     .btn {
       width: 100%;
-      max-width: 190px;
+      max-width: 184px;
+      margin-right: 27px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &--arlan {
+    .main-planning__left {
+      background-color: #F9F9FA;
+    }
+    .btn {
+      width: 100%;
+      max-width: 120px;
     }
   }
 }
