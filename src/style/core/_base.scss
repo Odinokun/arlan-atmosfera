@@ -98,24 +98,24 @@ svg {
 
 .btn {
   font-family: 'Manrope', sans-serif;
-  font-size: 14px;
   font-weight: 600;
   line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
   margin-right: 20px;
   padding: 5px 25px;
   cursor: pointer;
+  height: 80px;
   user-select: none;
   transition: all .5s;
+  font-size: 25px;
   text-align: center;
   white-space: nowrap;
   text-decoration: none;
   color: #4a7755;
   border: 2px solid #4a7755;
-  border-radius: 25px !important;
+  border-radius: 40px !important;
   background-color: transparent;
   box-shadow: none;
 

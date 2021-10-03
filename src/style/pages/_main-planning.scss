@@ -6,6 +6,10 @@
     .main-planning__left {
       background-color: #f7fbf8;
     }
+    .btn {
+      width: 100%;
+      max-width: 190px;
+    }
   }
 }
 
@@ -26,6 +30,7 @@
 
 .main-planning__btns{
 display: flex;
+  flex-wrap: wrap;
   width: 100%;
   padding: 20px 40px 40px 40px;
   .btn {
