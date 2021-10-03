@@ -59,11 +59,16 @@
   height: 270px;
   margin: 20px 10px;
   cursor: pointer;
+  transition: transform .3s;
   text-align: center;
   letter-spacing: .04em;
   border-radius: 15px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+
+  //&:hover {
+  //  transform: scale(.97);
+  //}
 }
 
