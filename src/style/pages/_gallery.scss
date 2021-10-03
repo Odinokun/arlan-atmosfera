@@ -3,6 +3,10 @@
 	min-height: 100vh;
 	width: 100%;
 
+	.container {
+		padding: 0;
+	}
+
 	&__slider {
 		height: 100vh;
 	}
@@ -27,7 +31,6 @@
 	}
 
 	&__text  {
-		font-family: $main-font;
 		font-size: 30px;
 		font-weight: 600;
 		line-height: 41px;
@@ -37,11 +40,20 @@
 
 	&__slider-btn {
 		position: absolute;
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
 		top: 50%;
 		width: 120px;
 		height: 120px;
 		border-radius: 50%;
 		cursor: pointer;
+
+		svg {
+			width: 16px;
+			height: 16px;
+			fill: #fff;
+		}
 
 		&.atmosfera {
 			background-color: $bg-atmosfera;
@@ -51,8 +63,19 @@
 			background-color: $bg-arlan;
 		}
 
+		&--prev,
+		&--next {
+			&::after {
+				display: none;
+			}
+		}
+
 		&--prev {
 			left: 60px;
+
+			svg {
+				transform: rotate(180deg);
+			}
 		}
 
 		&--next {

@@ -9,16 +9,19 @@ block content
 
     //begin content
     section.gallery
-        a.gallery__link(href="index.html")
-            +svg('house')
-            span.gallery__text Вернуться на главную
+        .container
+            a.gallery__link(href="index.html")
+                +svg('house')
+                span.gallery__text Вернуться на главную
         .gallery__slider.swiper
             .swiper-wrapper
                 +swiper-item("assets/img/bg-gallery.jpg")
                 +swiper-item("assets/img/bg-gallery.jpg")
                 +swiper-item("assets/img/bg-gallery.jpg")
-            .swiper-button-prev.gallery__slider-btn.gallery__slider-btn--prev.arlan
-            .swiper-button-next.gallery__slider-btn.gallery__slider-btn--next.arlan
+        .swiper-button-prev.gallery__slider-btn.gallery__slider-btn--prev.arlan
+            +svg('arrow')
+        .swiper-button-next.gallery__slider-btn.gallery__slider-btn--next.arlan
+            +svg('arrow')
     //end content
 
     include ../sections/scripts
